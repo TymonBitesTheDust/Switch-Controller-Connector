@@ -773,7 +773,16 @@ fn main() {
 
     let (etx, erx) = mpsc::channel::<Event>();
     let sender = ui.notice.sender();
+    #[cfg(not(feature = "demo"))]
     let cmd = bt::spawn(bt::Tx::new(etx, Arc::new(move || sender.notice())));
+    // Demo build (for screenshots): sample rows only, no Bluetooth worker.
+    #[cfg(feature = "demo")]
+    let cmd = {
+        let _ = (etx, sender);
+        let (c, r) = mpsc::channel::<Cmd>();
+        std::mem::forget(r);
+        c
+    };
 
     let app = Rc::new(App {
         ui,
@@ -809,6 +818,7 @@ fn main() {
             ] {
                 st.all.insert(r.id.clone(), r);
             }
+            let _ = st.names.set("7C:BB:8A:AA:01:02", "Red Joy-Con", "Joy-Con (L)");
             st.scan_error = None;
         }
         app.rebuild_list();
