@@ -8,7 +8,7 @@ Once you sync a controller with a Switch, the controller forgets its pairing wit
 
 ## Download
 
-**[Download SwitchControllerConnector.exe](../../raw/main/download/SwitchControllerConnector.exe)** (Windows 10/11). It's a single file with no install and no admin rights needed.
+**[Download SwitchControllerConnector.exe](https://github.com/TymonBitesTheDust/Nintendo-Switch-controller/raw/main/download/SwitchControllerConnector.exe)** (Windows 10/11). It's a single file with no install and no admin rights needed.
 
 Windows SmartScreen may warn you the first time because the app isn't signed. Click **More info → Run anyway**.
 
