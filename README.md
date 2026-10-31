@@ -1,7 +1,7 @@
 # Switch Controller Connector
 
-[![Latest release](https://img.shields.io/github/v/release/TymonBitesTheDust/Nintendo-Switch-controller?label=latest%20release)](https://github.com/TymonBitesTheDust/Nintendo-Switch-controller/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/TymonBitesTheDust/Nintendo-Switch-controller/total)](https://github.com/TymonBitesTheDust/Nintendo-Switch-controller/releases)
+[![Latest release](https://img.shields.io/github/v/release/TymonBitesTheDust/Switch-Controller-Connector?label=latest%20release)](https://github.com/TymonBitesTheDust/Switch-Controller-Connector/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/TymonBitesTheDust/Switch-Controller-Connector/total)](https://github.com/TymonBitesTheDust/Switch-Controller-Connector/releases)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D6)
 
 A small Windows app that connects Nintendo Switch controllers (Pro Controller and Joy-Con) to your PC over Bluetooth, including ones Windows has paired before and won't reconnect.
@@ -10,9 +10,9 @@ A small Windows app that connects Nintendo Switch controllers (Pro Controller an
 
 ## Download
 
-**[⬇ Download the latest version](https://github.com/TymonBitesTheDust/Nintendo-Switch-controller/releases/latest/download/SwitchControllerConnector.exe)**
+**[⬇ Download the latest version](https://github.com/TymonBitesTheDust/Switch-Controller-Connector/releases/latest/download/SwitchControllerConnector.exe)**
 
-It's a single `.exe`: no install and no admin rights needed. Older versions and release notes are on the [Releases page](https://github.com/TymonBitesTheDust/Nintendo-Switch-controller/releases).
+It's a single `.exe`: no install and no admin rights needed. Older versions and release notes are on the [Releases page](https://github.com/TymonBitesTheDust/Switch-Controller-Connector/releases).
 
 > Windows SmartScreen may warn you the first time because the app isn't code-signed. Click **More info → Run anyway**.
 
