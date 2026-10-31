@@ -1,0 +1,33 @@
+[package]
+name = "switch-connector"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+native-windows-gui = { version = "1.0.13", default-features = false, features = ["list-view", "notice", "timer", "high-dpi", "embed-resource", "textbox"] }
+windows = { version = "0.62.2", features = [
+  "Foundation",
+  "Foundation_Collections",
+  "Devices_Enumeration",
+  "Devices_Radios",
+  "Win32_Foundation",
+  "Win32_Devices_Bluetooth",
+  "Win32_System_Com",
+  "Win32_System_SystemInformation",
+  "Win32_Graphics_Gdi",
+  "Win32_UI_WindowsAndMessaging",
+  "Win32_UI_Input_KeyboardAndMouse",
+] }
+windows-collections = "0.3"
+windows-future = "0.3"
+windows-core = "0.62"
+
+[features]
+demo = []
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
